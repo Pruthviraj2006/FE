@@ -1,0 +1,51 @@
+p{
+    color: red;
+}
+
+.para1{
+    background-color: aquamarine;
+}
+
+#paraID{
+    background-color: chartreuse;
+    animation: rotateAnimation 2s linear infinite;
+}
+.circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    background-color: darkorchid;
+    overflow: hidden;
+}
+.custom{
+    background-color: burlywood;
+    animation: reverseAnimation 2s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+      color: white;
+    }
+    to {
+      transform: rotate(360deg);
+      color: red;
+    }
+  }
+
+  @keyframes reverseAnimation {
+    from {
+      transform: rotate(360deg);
+      background-color: white;
+    }
+    to {
+      transform: rotate(0deg);
+      
+    }
+  }
+
